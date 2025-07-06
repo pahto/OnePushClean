@@ -1,1 +1,78 @@
-<html><body><h1>OnePush Media</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OnePush Media</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+    .hero {
+      background: url('frontpage.png') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+    .button-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 80px;
+      z-index: 2;
+    }
+    .button-bar a {
+      background-color: #f90;
+      color: white;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .main-button {
+      margin-bottom: 20px;
+      background-color: #f90;
+      color: white;
+      padding: 16px 32px;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+    .app-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .app-buttons img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="app-buttons">
+      <img src="appstore.png" alt="App Store" />
+      <img src="googleplay.png" alt="Google Play" />
+    </div>
+    <a class="main-button" href="learnmore.html">Learn more</a>
+    <div class="button-bar">
+      <a href="learnmore.html">Learn more</a>
+      <a href="howitworks.html">How it works</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="#">Our Story</a>
+      <a href="#">Contact</a>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</body>
+</html>
