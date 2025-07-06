@@ -2,36 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OnePush Media</title>
   <style>
     body {
       margin: 0;
+      background-color: #f0f0f0;
       font-family: sans-serif;
-      background-color: #fff;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      justify-content: flex-start;
+      flex-direction: column;
     }
     .image-container {
+      max-width: 100%;
       width: 100%;
-      max-width: 768px;
+      height: auto;
     }
-    .store-buttons {
-      margin: 20px 0;
+    .button-link {
+      margin: 20px;
     }
-    .store-buttons img {
-      height: 50px;
-      margin: 0 10px;
+    .button-link a {
+      background-color: #f9a825;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <img src="etusivu.png" alt="OnePush Media Front Page" class="image-container" />
-  <div class="store-buttons">
-    <a href="#"><img src="appstore.png" alt="App Store" /></a>
-    <a href="#"><img src="googleplay.png" alt="Google Play" /></a>
+  <img src="etusivu.png" alt="OnePush Front Page" class="image-container" />
+  <div class="button-link">
+    <a href="learnmore.html">Learn more</a>
   </div>
 </body>
 </html>
