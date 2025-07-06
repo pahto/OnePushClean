@@ -3,21 +3,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OnePush Media</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: sans-serif;
       text-align: center;
-      background: url('etusivu.png') no-repeat center top;
+      background: url('background.png') no-repeat center top;
       background-size: cover;
+      padding-top: 100px;
     }
     .button-bar {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 420px;
+      margin-top: 20px;
       gap: 10px;
     }
     .btn {
@@ -30,18 +34,76 @@
       cursor: pointer;
       text-decoration: none;
     }
+    .store-links {
+      margin: 20px 0;
+    }
+    .store-links img {
+      height: 50px;
+      margin: 0 10px;
+    }
+    section {
+      max-width: 600px;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
-  <a href="learnmore.html" class="btn">Learn more</a>
-  <div class="button-bar">
-    <a href="learnmore.html" class="btn">Learn more</a>
-    <a href="howitworks.html" class="btn">How it works</a>
-    <a href="testimonials.html" class="btn">Testimonials</a>
-    <a href="ourstory.html" class="btn">Our Story</a>
-    <a href="contact.html" class="btn">Contact</a>
-    <a href="faq.html" class="btn">FAQ</a>
-    <a href="privacypolicy.html" class="btn">Privacy Policy</a>
+  <a href="#learnmore" class="btn">Learn more</a>
+  <div class="store-links">
+    <img src="appstore.png" alt="App Store" />
+    <img src="googleplay.png" alt="Google Play" />
   </div>
+  <div class="button-bar">
+    <a href="#learnmore" class="btn">Learn more</a>
+    <a href="#howitworks" class="btn">How it works</a>
+    <a href="#testimonials" class="btn">Testimonials</a>
+    <a href="#ourstory" class="btn">Our Story</a>
+    <a href="#contact" class="btn">Contact</a>
+    <a href="#faq" class="btn">FAQ</a>
+    <a href="#privacy" class="btn">Privacy Policy</a>
+  </div>
+
+  <section id="learnmore">
+    <h2>What is OnePush Media?</h2>
+    <p>The world’s simplest way to post photos and videos. No clutter—just pick, edit, and post in a jiffy.</p>
+  </section>
+
+  <section id="howitworks">
+    <h2>Why does it work?</h2>
+    <p>Because sometimes, less is more. OnePush Media is built for one-tap publishing, not app-fiddling.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“The best app I’ve ever used!” – Someone Happy</p>
+  </section>
+
+  <section id="ourstory">
+    <h2>Our Story</h2>
+    <p>Built by people who wanted posting to be simple again.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: support@onepush.media</p>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <p>Coming soon...</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <ul>
+      <li>We collect no personal data</li>
+      <li>We store no passwords</li>
+      <li>All media saved on device only</li>
+      <li>No ads, no tracking</li>
+    </ul>
+  </section>
 </body>
 </html>
